@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drag Event Listener | isaac.</title>
+    <link rel="stylesheet" href="css/drag.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="annoucment">Fly to your desired destination!</h1>
+
+    <div class="start">
+      <div
+        id="draggable"
+        draggable="true"
+        ondragstart="event.dataTransfer.setData('text/plain', null)"
+      >
+        <img class="plane" src="img/landed.svg" alt="" />
+      </div>
+    </div>
+    <section class="destination-container">
+      <div class="holderZone">
+        <div class="dropzone"><h1>Desert Sanctuary</h1></div>
+        <img src="img/DesertSanctuary.webp" alt="" />
+      </div>
+
+      <div class="holderZone">
+        <div class="dropzone"><h1>Tropical Retreat</h1></div>
+        <img src="img/island.jpg" alt="" />
+      </div>
+
+      <div class="holderZone">
+        <div class="dropzone"><h1>Mountain Expedition</h1></div>
+        <img src="img/mountain.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- <div class="dropzone"><h4>Island Getaway</h4></div>
+  <div class="dropzone"><h4>Mountain Excursion</h4></div> -->
+    <script src="js/drag.js"></script>
+  </body>
+</html>
